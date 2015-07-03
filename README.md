@@ -27,7 +27,7 @@ Or install it yourself as:
 
 1. Find user by ID (you have to get it by yourself by looking at URL in browser)
 ```ruby
-user = Steam.user '76561198041851025'
+user = SteamStats::User.new 76561198041851025
 ```
 
 2. Get array of played games
