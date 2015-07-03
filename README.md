@@ -1,5 +1,10 @@
 # SteamStats
 
+[![Build Status](https://travis-ci.org/neonowy/steam-stats.svg?branch=master)](https://travis-ci.org/neonowy/steam-stats)
+[![Dependency Status](https://gemnasium.com/neonowy/steam-stats.svg)](https://gemnasium.com/neonowy/steam-stats)
+[![Code Climate](https://codeclimate.com/github/neonowy/steam-stats/badges/gpa.svg)](https://codeclimate.com/github/neonowy/steam-stats)
+[![Coverage Status](https://coveralls.io/repos/neonowy/steam-stats/badge.svg?branch=master)](https://coveralls.io/r/neonowy/steam-stats?branch=master)
+
 Get Steam player's info and games stats.
 
 ## Installation
