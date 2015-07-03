@@ -22,8 +22,7 @@ RSpec.describe SteamStats::User do
   end
 
   it 'gets user avatar' do
-    expect(user.avatar).to
-      eq 'http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/b9/b9a781a894d319c1a1331a35fc17adf9b02fee76_full.jpg'
+    expect(user.avatar).to eq 'http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/b9/b9a781a894d319c1a1331a35fc17adf9b02fee76_full.jpg'
   end
 
   it 'gets user country' do
@@ -39,8 +38,7 @@ RSpec.describe SteamStats::User do
   end
 
   it 'gets games' do
-    expect(user.games).to
-      include({ name: 'Call of Duty: Modern Warfare 2 - Multiplayer', played_hours: 914 }, { name: 'VVVVVV', played_hours: 0.1 })
+    expect(user.games).to include({ name: 'Call of Duty: Modern Warfare 2 - Multiplayer', played_hours: 914 }, { name: 'VVVVVV', played_hours: 0.1 })
   end
 
   context 'not played game' do
