@@ -25,14 +25,16 @@ Or install it yourself as:
 
 ## Usage
 
-1. Find user by ID (you have to get it by yourself by looking at URL in browser)
+1. Find user by ID or your customized address nick, check it by going to your profile page at [steamcommunity.com](http://steamcommunity.com/)
 ```ruby
 user = Steam.user '76561198041851025'
+# or
+user = Steam.user 'pewdie'
 ```
 
 2. Get array of played games
 ```ruby
-games = user.games #=> [{ name: 'Team Fortress 2', played_hours: 93 }, { name: 'Sniper Elite V2', played_hours: 2.4 }]
+games = user.games #=> [{ name: 'Team Fortress 2', played_hours: 93 }, { name: 'Sniper Elite V2', played_hours: 2.4 }, ...]
 ```
 
 3. And now you have your stats, have fun with it!

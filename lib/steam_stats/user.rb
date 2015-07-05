@@ -26,7 +26,7 @@ module SteamStats
       @name = @user_page.css('.actual_persona_name')[0].text
       @real_name = @user_page.css('.header_real_name.ellipsis bdi')[0].text
       @avatar = @user_page.css('.playerAvatar img')[0]['src']
-      @country = @user_page.css('.profile_flag')[0]['src'][-6..-5].upcase
+      @country = @user_page.css('.profile_flag')[0]['src'][-6..-5].upcase rescue nil
       @level = @user_page.css('.persona_name .friendPlayerLevelNum').text.to_i
 
       if @user_page.css('.profile_in_game_header').nil?
