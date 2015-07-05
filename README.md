@@ -27,9 +27,9 @@ Or install it yourself as:
 
 1. Find user by ID or your customized address nick, check it by going to your profile page at [steamcommunity.com](http://steamcommunity.com/)
 ```ruby
-user = Steam.user '76561198041851025'
+user = SteamStats::User.new '76561198041851025'
 # or
-user = Steam.user 'pewdie'
+user = SteamStats::User.new 'pewdie'
 ```
 
 2. Get array of played games
